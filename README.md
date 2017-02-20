@@ -12,7 +12,7 @@ run 'yarn global add bunyan'
 
 run 'yarn add express bunyan'
 
-run 'yarn add --dev babel-cli babel-preset-env'
+run 'yarn add --dev babel-cli babel-preset-env babel-preset-react'
 
 create app.js
 
