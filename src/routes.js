@@ -1,3 +1,8 @@
+import template from './template';
+import App from './app';
+import React from 'react';
+import { renderToString } from 'react-dom/server';
+
 module.exports = class Routes {
 
     constructor(logger){
@@ -17,6 +22,14 @@ module.exports = class Routes {
 
     View(req, res, next){
         this.logger.info('View Route with called');
-        res.send('View here');
+        const initialState = { };
+        const appString = renderToString(<App{...initialState}/>);
+
+        res.send(template({
+            body: appString,
+            title: 'Hello World from the server',
+            initialState: JSON.stringify(initialState)
+        }));
+
     }
 }

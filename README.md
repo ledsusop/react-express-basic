@@ -1,5 +1,19 @@
 # react-express-basic
 
+HOW TO RUN
+install nvm
+
+install node version (7.4.0) 
+
+install yarn
+
+run yarn on directory
+
+
+
+
+BOILERPLATE BUILD OUT
+
 install nvm
 
 install node version (7.4.0) 
@@ -13,6 +27,7 @@ run 'yarn global add bunyan'
 run 'yarn add express bunyan'
 
 run 'yarn add --dev babel-cli babel-loader babel-core babel-preset-env babel-preset-es2015 babel-preset-react webpack'
+run 'yarn add --dev extract-text-webpack-plugin webpack-node-externals'
 
 run 'yarn add react react-dom'
 
