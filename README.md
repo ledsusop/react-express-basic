@@ -12,6 +12,8 @@ run 'yarn global add bunyan'
 
 run 'yarn add express bunyan'
 
+run 'yarn add --dev babel-cli babel-preset-env'
+
 create app.js
 
 write server start code
