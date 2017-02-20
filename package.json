@@ -1,0 +1,9 @@
+{
+  "name": "react-express-basic",
+  "version": "0.0.1",
+  "description": "barebones boilerplate code for react and express",
+  "main": "app.js",
+  "repository": "https://github.com/ledsusop/react-express-basic",
+  "author": "ledsusop",
+  "license": "MIT"
+}
