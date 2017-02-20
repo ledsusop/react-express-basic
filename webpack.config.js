@@ -6,6 +6,11 @@ const config = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist')
   },
+  module: {
+    rules: [
+      {test: /\.(js|jsx)$/, use: 'babel-loader'}
+    ]
+  },
   node: {
     fs: "empty",
     net: "empty"

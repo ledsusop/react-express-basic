@@ -1,4 +1,4 @@
-class Routes {
+module.exports = class Routes {
     constructor(logger){
         this.logger = logger;
         this.logger.info('route created');
