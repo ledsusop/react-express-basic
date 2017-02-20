@@ -12,7 +12,7 @@ app.get('/api',function(req,res){
     res.send('APIs here');
 })
 
-app.get('/lp',function(req,res){
+app.get('/view',function(req,res){
     res.send('LPs here');
 })
 
