@@ -1,10 +1,10 @@
-export default ({ body, title, css }) => {
+export default ({ body, title, cssFile }) => {
   return `
     <!DOCTYPE html>
     <html>
       <head>
         <title>${title}</title>
-        <link rel="stylesheet" href="/assets/${css}" />
+        <link rel="stylesheet" href="/assets/${cssFile}" />
       </head>
       
       <body>

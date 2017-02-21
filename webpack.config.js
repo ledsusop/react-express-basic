@@ -1,4 +1,5 @@
 var webpack = require('webpack');
+var path = require('path');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var nodeExternals = require('webpack-node-externals');
 
@@ -65,6 +66,11 @@ module.exports = [
       loaders: [
         {
           test: /\.js$/,
+          exclude: /node_modules/,
+          loader: 'babel-loader'
+        },
+        {
+          test: /\.jsx$/,
           exclude: /node_modules/,
           loader: 'babel-loader'
         },

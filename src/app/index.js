@@ -1,17 +1,18 @@
 import React, { Component, PropTypes } from 'react';
+import Header  from './components/Header';
+import Content from './components/Content';
 
 export default class App extends Component {
   render() {
-    const { isMobile } = this.props;
+
 
     return (
-      <div>
-        <h1>hello world {isMobile ? 'mobile' : 'desktop'}</h1>
-      </div>
+        <div id="main-content">
+            <Header content={this.props.headerContent}/>
+            <Content content={this.props.mainContent}/>
+        </div>
     );
   }
 }
 
-App.propTypes = {
-  isMobile: PropTypes.bool.isRequired
-};
+App.propTypes = {};

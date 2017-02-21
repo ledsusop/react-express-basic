@@ -9,7 +9,9 @@ install yarn
 
 run yarn on directory
 
+run yarn start on directory
 
+run node ./dist/server.js
 
 
 BOILERPLATE BUILD OUT
@@ -24,7 +26,7 @@ run 'yarn init'
 
 run 'yarn global add bunyan'
 
-run 'yarn add express bunyan'
+run 'yarn add express bunyan request'
 
 run 'yarn add --dev babel-cli babel-loader babel-core babel-preset-env babel-preset-es2015 babel-preset-react webpack'
 run 'yarn add --dev extract-text-webpack-plugin webpack-node-externals'
