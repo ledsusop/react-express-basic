@@ -13,6 +13,9 @@ run yarn start on directory
 
 run node ./dist/server.js
 
+test http://localhost:3000/view?userName=YesMan&area=FosterCity
+test http://localhost:3000/api?userName=YesMan&area=FosterCity
+
 
 BOILERPLATE BUILD OUT
 
