@@ -1,6 +1,6 @@
 # react-express-basic
+##HOW TO RUN
 
-HOW TO RUN
 install nvm
 
 install node version (7.4.0) 
@@ -17,7 +17,7 @@ test http://localhost:3000/view?userName=YesMan&area=FosterCity
 test http://localhost:3000/api?userName=YesMan&area=FosterCity
 
 
-BOILERPLATE BUILD OUT
+##MANUAL STEPS REPLACED BY THE BOILERPLATE
 
 install nvm
 
