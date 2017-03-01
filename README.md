@@ -32,7 +32,7 @@ run 'yarn global add bunyan'
 run 'yarn add express bunyan request'
 
 run 'yarn add --dev babel-cli babel-loader babel-core babel-preset-env babel-preset-es2015 babel-preset-react webpack'
-run 'yarn add --dev extract-text-webpack-plugin webpack-node-externals'
+run 'yarn add --dev extract-text-webpack-plugin webpack-node-externals copy-webpack-plugin'
 
 run 'yarn add react react-dom'
 
@@ -45,6 +45,8 @@ write route for api/services
 write route for serving reactjs view
 
 write webpack config
+
+define static directories
 
 use bunyan for logging
 
