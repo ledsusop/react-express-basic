@@ -1,7 +1,7 @@
 import template from './template';
 import App from './app';
 import React from 'react';
-import { renderToString } from 'react-dom/server';
+import { renderToString, renderToStaticMarkup } from 'react-dom/server';
 import ContentService from './app/service/contentService'
 
 module.exports = class Routes {
@@ -49,7 +49,7 @@ module.exports = class Routes {
                 }
                 initialState.mainContent = '<ul>'+items.join("")+'</ul>';
 
-                const appString = renderToString(<App{...initialState}/>);
+                const appString = renderToStaticMarkup(<App{...initialState}/>);
 
 
                 res.send(template({
@@ -61,11 +61,11 @@ module.exports = class Routes {
 
             }else{
                 that.logger.error(error);
-                res.send(template({
+                res.send(renderToString(template({
                     body: 'error',
                     title: 'Error',
                     initialState: JSON.stringify(initialState)
-                }));
+                })));
             }
 
         })

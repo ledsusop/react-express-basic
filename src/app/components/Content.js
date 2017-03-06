@@ -8,6 +8,6 @@ export default class Content extends React.Component {
   }
 
   render() {
-    return <div id="main-content" dangerouslySetInnerHTML={this.createMarkup(this.props.content)}/>;
+    return <div id="body-content" dangerouslySetInnerHTML={this.createMarkup(this.props.content)}/>;
   }
 }
