@@ -49,7 +49,7 @@ module.exports = class Routes {
                 }
                 initialState.mainContent = '<ul>'+items.join("")+'</ul>';
 
-                const appString = renderToStaticMarkup(<App{...initialState}/>);
+                const appString = renderToString(<App {...initialState}/>);
 
 
                 res.send(template({
