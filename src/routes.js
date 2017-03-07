@@ -47,6 +47,7 @@ module.exports = class Routes {
                 for (let i = 0; i < listContentKeys.length; i++) {
                   items.push('<li>'+listContentKeys[i]+' : '+listContentValues[i]+'</li>');
                 }
+
                 initialState.mainContent = '<ul>'+items.join("")+'</ul>';
 
                 const appString = renderToString(<App {...initialState}/>);
